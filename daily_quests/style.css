@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Noto+Sans+TC:wght@100..900&display=swap');
-
 html,
 body,
 div,
@@ -122,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -131,113 +129,62 @@ table {
   border-spacing: 0;
 }
 
-*, *::before, *::after {
+* {
   box-sizing: border-box;
-  /* outline: solid 1px; */
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 a {
   text-decoration: none;
-  color: #000;
-}
-
-body {
-  font-family: "Castoro", serif;
-  font-size: 24px;
-  line-height: 1.5;
+  display: inline-block;
+  color: inherit;
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .header {
-  margin-top: 160px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.desc {
-  background-color: #EFEFEF;
-  padding: 48px 0;
-}
-
-.about {
-  margin: 80px 0 160px 0;
-}
-
-.about-list-title {
-  color: #AE0000;
-  border-bottom: 3px solid #AE0000;
-}
-
-.about-list-text {
-  font-style: italic;
-  color: #949494;
-}
-
-.footer {
-  background-color: #000;
-}
-
-.social-list {
-  padding: 64px 0;
-}
-
-.social-list li {
-  display: inline-block;
-}
-
-.text-center {
+.title {
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
 }
 
-.h1 {
-  font-size: 128px;
-  letter-spacing: 0.12em;
+.main {
+  text-align: center;
 }
 
-.h2 {
-  font-size: 40px;
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.fs-1 {
-  font-size: 32px;
+.example-list {
+  text-align: center;
 }
 
-.fs-3 {
-  font-size: 20px;
-}
-
-.w-50 {
+.example-link {
+  display: block;
+  margin: 0 auto;
   width: 50%;
-}
-
-.ms-auto {
-  margin-left: auto;
-}
-
-.mb-2 {
-  margin-bottom: 8px;
-}
-
-.mb-3 {
-  margin-bottom: 12px;
-}
-
-.mb-4 {
+  padding: 20px;
   margin-bottom: 16px;
+  border-radius: 8px;
+  border: solid 1px #0d6efd;
+  color: #0d6efd;
+  transition: .2s;
 }
 
-.mb-10 {
-  margin-bottom: 40px;
-}
-
-.me-10 {
-  margin-right: 40px;
+.example-link:hover {
+  background: #0d6efd;
+  color: white;
 }
