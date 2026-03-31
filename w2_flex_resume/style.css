@@ -1,4 +1,4 @@
-@import url('https: //fonts.google.com/specimen/Bruno+Ace+SC?query=Bruno+Ace');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 /* reset */
 html,
@@ -133,16 +133,16 @@ table {
 }
 
 /* base */
-body {
-  font-family: "Bruno Ace SC", sans-serif;
-  line-height: 1.5;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   /* outline: solid 1px; */
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
 }
 
 img {
@@ -159,15 +159,78 @@ a {
 
 
 /* layout */
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
 
+.header {
+  padding: 40px 0;
+  color: #D1D1D1;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}
 
 /* component */
+.btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+.btn-light {
+  background-color: white;
+  color: black;
+}
 
 
 /* pages */
+.banner {
+  padding: 72px 0px 32px 0px;
+}
 
+.banner-title {
+  width: 636px;
+  font-size: 64px;
+}
 
 /* utilities */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.banner-title-strong {
+  display: block;
+  text-align: end;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.text-primary {
+  color: #00FFA3;
+}
+
+.text-light {
+  color: white;
+}
+
 .h1 {
   font-size: 128px;
 }
