@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
 /* reset */
 html,
@@ -123,7 +123,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -157,7 +157,6 @@ a {
   display: block;
 }
 
-
 /* layout */
 .container {
   width: 1296px;
@@ -166,7 +165,7 @@ a {
 
 .header {
   padding: 40px 0;
-  color: #D1D1D1;
+  color: #d1d1d1;
 }
 
 .footer {
@@ -186,7 +185,6 @@ a {
   color: black;
 }
 
-
 /* pages */
 .banner {
   padding: 72px 0px 32px 0px;
@@ -194,7 +192,24 @@ a {
 
 .banner-title {
   width: 636px;
-  font-size: 64px;
+}
+
+.introduction {
+  padding: 160px 0;
+  background-image: url('./img/background-img.png');
+  background-size: cover;
+}
+
+.intro-content {
+  width: 526px;
+}
+
+.intro-content-img {
+  width: 128px;
+}
+
+.introduction-img {
+  width: 746px;
 }
 
 /* utilities */
@@ -224,7 +239,7 @@ a {
 }
 
 .text-primary {
-  color: #00FFA3;
+  color: #00ffa3;
 }
 
 .text-light {
@@ -236,7 +251,7 @@ a {
 }
 
 .h2 {
-  font-size: 40px;
+  font-size: 64px;
 }
 
 .fs-1 {
@@ -250,3 +265,13 @@ a {
 .fs-3 {
   font-size: 20px;
 }
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 36px;
+}
+
+/* 36 32 24 28 16 */
