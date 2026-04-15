@@ -178,11 +178,17 @@ a {
   font-size: 16px;
   padding: 12px 24px;
   border-radius: 32px;
+  display: inline-block;
 }
 
 .btn-light {
   background-color: white;
   color: black;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
 }
 
 /* pages */
@@ -250,6 +256,25 @@ a {
   box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
 }
 
+.projects {
+  padding: 160px 0;
+}
+
+.projects-title {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.projects-introduce {
+  width: 856px;
+  margin-bottom: 28px;
+}
+
+.projects-text {
+  width: 636px;
+}
+
 /* utilities */
 .d-flex {
   display: flex;
@@ -257,6 +282,10 @@ a {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-content-between {
@@ -270,6 +299,7 @@ a {
 .align-items-center {
   align-items: center;
 }
+
 
 .bg-dark {
   background-color: black;
@@ -303,8 +333,16 @@ a {
   font-size: 20px;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .mr-2 {
   margin-right: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 16px;
 }
 
 .mb-3 {
