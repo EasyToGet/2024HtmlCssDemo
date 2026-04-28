@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 - 整合相同樣式</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="profile">
+      <h2 class="text-red">樣式調整前</h2>
+      <h2>個人資料</h2>
+    </div>
+    <div class="education">
+      <h2>學歷</h2>
+    </div>
+    <hr />
+    <!-- 範例 調整前後 -->
+    <div class="container">
+      <h2 class="title text-red">樣式調整後</h2>
+      <h2 class="title">個人資料</h2>
+    </div>
+    <div class="container">
+      <h2 class="title">學歷</h2>
+    </div>
+    <hr />
+    <div class="profile mb-1">
+      <h2 class="text-red">樣式調整前</h2>
+      <h2>個人資料<span>PROFILE</span></h2>
+    </div>
+    <div class="education mb-1">
+      <h2>學歷<span>EDUCATION</span></h2>
+    </div>
+    <div class="bg-primary mb-1">
+      <div class="skills">
+        <h2>技能<span>SKILLS</span></h2>
+      </div>
+    </div>
+    <div class="bg-primary mb-1">
+      <div class="contact">
+        <h2>聯絡方式<span>CONTACT METHOD</span></h2>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2 class="title text-red mb-1">樣式調整後</h2>
+      <div class="mb-1">
+        <h2 class="title">個人資料<span class="fs-2 text-danger ml-2">PROFILE</span></h2>
+      </div>
+      <div class="mb-1">
+        <h2 class="title">學歷<span class="fs-2 text-danger ml-2">EDUCATION</span></h2>
+      </div>
+    </div>
+    <div class="bg-primary mb-1">
+      <div class="container">
+        <h2 class="title text-light">技能<span class="fs-2 ml-2">SKILLS</span></h2>
+      </div>
+    </div>
+    <div class="bg-primary mb-1">
+      <div class="container">
+        <h2 class="title text-light">聯絡方式<span class="fs-2 ml-2">CONTACT METHOD</span></h2>
+      </div>
+    </div>
+  </body>
+</html>
