@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap");
+
+body {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.italic {
+  font-style: italic;
+}
