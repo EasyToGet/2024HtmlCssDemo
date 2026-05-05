@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 20 - CSS 權重覆蓋</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h3>1. 請問 p 標籤內文字是什麼顏色</h3>
+    <p class="blue red black">這是藍色ㄉ文字</p>
+    <h3>2. 請問 p 標籤內文字是什麼顏色</h3>
+    <p class="a p">這是藍色ㄉ文字</p>
+    <h3>3. 請問 p 標籤內文字是什麼顏色</h3>
+    <p class="p blue1" id="blue1">這是藍色ㄉ文字</p>
+    <h3>
+      解答：<br />
+      <span class="red">1. red</span><br />
+      <span class="blue">2. blue</span><br />
+      <span id="blue1">3. white</span>
+    </h3>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+p {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.p {
+  color: blue;
+}
+
+a {
+  color: red;
+}
+
+.blue1 {
+  color: red;
+}
+
+p.blue1 {
+  color: green;
+}
+
+#blue1 {
+  color: white;
+  background-color: black;
+}
