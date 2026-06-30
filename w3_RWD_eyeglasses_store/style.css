@@ -266,7 +266,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .container-sm-full {
     padding: 0;
   }
