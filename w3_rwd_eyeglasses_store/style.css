@@ -240,6 +240,105 @@ a:hover:not(.logo) {
   }
 }
 
+.footer {
+  padding: 48px 0 32px 0;
+}
+
+.footer-header {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.footer .nav {
+  margin-bottom: 26px;
+}
+
+.footer .nav-item a {
+  padding: 12px 32px;
+}
+
+.footer .contact-list {
+  font-size: 36px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.footer .contact-list .material-symbols-outlined {
+  font-size: 48px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+/* 除了最後一個 <li> 之外,其他項目下方都加 8px 的間距 */
+.footer .contact-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer .social-list img {
+  width: 48px;
+}
+
+.footer .social-list a {
+  padding: 0 16px;
+}
+
+.footer .copyright {
+  justify-content: space-between;
+}
+
+.footer .copyright-text {
+  margin-bottom: 4px;
+}
+
+.footer .privacy-list a {
+  padding: 0 24px;
+}
+
+@media (max-width: 992px) {
+  .footer .social-list img {
+    width: 40px;
+  }
+
+  .footer .nav-item a {
+    padding: 12px 24px;
+  }
+
+  .footer .social-list a {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .nav {
+    display: none;
+  }
+
+  .footer .contact-list {
+    font-size: 16px;
+  }
+
+  .footer .social-list img {
+    width: 24px;
+  }
+
+  .footer .contact-list .material-symbols-outlined {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .footer .copyright {
+    flex-direction: column;
+  }
+
+  .footer .privacy-list a {
+    flex-direction: column;
+  }
+
+  .footer .privacy-list a {
+    padding: 4px 0;
+  }
+}
+
 /* utilities */
 .container {
   max-width: 1320px;
@@ -263,6 +362,12 @@ a:hover:not(.logo) {
   .container-sm-full {
     padding: 0;
   }
+}
+
+.container-md-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .d-flex {
