@@ -457,6 +457,66 @@ a:hover:not(.logo) {
   }
 }
 
+.cobrand {
+  background-image: url("./img/index-bg.png");
+  background-size: cover;
+}
+
+.cobrand-list .card {
+  width: 50%;
+}
+
+.cobrand-list .card-img {
+  height: 240px;
+  background-position: center;
+}
+
+.cobrand-list .card-img-double {
+  background-image: url("./img/home-section4-1.png");
+  background-size: cover;
+}
+
+.cobrand-list .card-img-youth {
+  background-image: url("./img/home-section4-2.png");
+  background-size: cover;
+}
+
+.cobrand-list .card-title {
+  font-size: 48px;
+  color: var(--primary);
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+  background-color: var(--bg-light);
+}
+
+@media (max-width: 992px) {
+  .cobrand-list {
+    flex-wrap: wrap;
+  }
+
+  .cobrand-list .card {
+    width: 100%;
+    /* max-width: 696px; */
+  }
+
+  .cobrand-list .card:not(last-child) {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cobrand-list .card-img-double {
+    background-image: url("./img/home-section4-1-sm.png");
+    background-size: cover;
+  }
+
+  .cobrand-list .card-img-youth {
+    background-image: url("./img/home-section4-2-sm.png");
+    background-size: cover;
+  }
+}
+
 .content-padding {
   padding: 80px 0;
 }
