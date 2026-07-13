@@ -423,6 +423,40 @@ a:hover:not(.logo) {
   color: var(--secondary);
 }
 
+.classic-list {
+  gap: 24px;
+}
+
+.classic-list .card-img {
+  margin-bottom: 8px;
+}
+
+.classic-list .card-title {
+  font-size: 48px;
+  color: var(--primary);
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .classic-list {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* .classic-list .card {
+    max-width: 336px;
+  } */
+}
+
+@media (max-width: 576px) {
+  .classic-list .card {
+    max-width: 348px;
+  }
+}
+
 .content-padding {
   padding: 80px 0;
 }
