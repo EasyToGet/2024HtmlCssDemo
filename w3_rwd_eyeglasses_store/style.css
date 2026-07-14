@@ -560,7 +560,6 @@ a:hover:not(.logo) {
   }
 }
 
-
 @media (max-width: 576px) {
   .recommend .recommend-list {
     flex-wrap: wrap;
@@ -569,6 +568,113 @@ a:hover:not(.logo) {
   .recommend .recommend-list .card {
     width: 100%;
   }
+}
+
+.contact-form {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.contact-desc {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  .contact-form {
+    max-width: 576px;
+  }
+
+  .contact-desc {
+    font-size: 16px;
+  }
+}
+
+.contact-form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-input {
+  display: block;
+  width: 100%;
+  background: var(--bg-light);
+  outline: 0;
+  border: solid 1px black;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.contact-form-input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.contact-list textarea {
+  resize: none;
+}
+
+.contact-list li:not(last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-list .agree-item {
+  margin-bottom: 48px;
+}
+
+.contact-list .agree-item input {
+  display: none;
+}
+
+.contact-list .agree-item label {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-list .agree-item label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  border: solid 2px #000;
+  background: var(--bg-light);
+  border-radius: 2px;
+}
+
+.contact-list .agree-item label::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  transform: rotate(45deg);
+}
+
+.contact-list .agree-item input:checked ~ label::before {
+  background: #000;
+}
+
+.contact-list .agree-item input:checked ~ label::after {
+  display: block;
+}
+
+.contact-form-btn {
+  display: block;
+  width: 100%;
+  max-width: 416px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 16px 0;
+  margin: 0 auto;
 }
 
 .content-padding {
