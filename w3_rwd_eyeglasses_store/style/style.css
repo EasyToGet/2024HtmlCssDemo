@@ -234,25 +234,25 @@
   width: calc(25% - 18px);
 } */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .feature-list .card {
     width: calc(50% - 12px);
   }
+} */
 
-  .feature-list > li:not(:last-child) {
-    margin-bottom: 24px;
-  }
-}
-
-/* @media (max-width: 576px) {
-  .feature-list {
+@media (max-width: 576px) {
+  /* .feature-list {
     gap: 32px;
   }
 
   .feature-list .card {
     width: 100%;
+  } */
+
+  .feature-list > li:not(:last-child) {
+    margin-bottom: 24px;
   }
-} */
+}
 
 .feature-list .card-header {
   margin-bottom: 8px;
