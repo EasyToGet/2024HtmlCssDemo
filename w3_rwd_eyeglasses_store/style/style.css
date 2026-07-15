@@ -666,7 +666,7 @@
   width: 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .w-md-100 {
     width: 100%;
   }
