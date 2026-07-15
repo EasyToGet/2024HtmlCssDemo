@@ -1,173 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import "reset.css";
+@import "base.css";
+
 /* variables */
 :root {
   --primary: #aa0601;
   --secondary: #650300;
   --bg-light: #fbf2f2;
   --bg-dark: #aa0601;
-}
-
-/* reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* base */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  /* outline: solid 1px; */
-}
-
-body {
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  transition: opacity 0.5s;
-}
-
-a:hover:not(.logo) {
-  opacity: 0.7;
 }
 
 /* layout */
@@ -182,7 +23,7 @@ a:hover:not(.logo) {
   height: 48px;
   text-indent: 101%;
   overflow: hidden;
-  background: url("./img/logo-white.png");
+  background: url("../img/logo-white.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,7 +55,7 @@ a:hover:not(.logo) {
   }
 
   .header .logo {
-    margin: 16px;
+    margin: 16px 12px;
   }
 
   .header-wrap {
@@ -308,7 +149,7 @@ a:hover:not(.logo) {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .footer .nav {
     display: none;
   }
@@ -342,7 +183,7 @@ a:hover:not(.logo) {
 /* pages */
 .banner {
   color: var(--secondary);
-  background-image: url("./img/home-header.png");
+  background-image: url("../img/home-header.png");
   background-size: cover;
   height: calc(100vh - 80px);
   /* height: 787px; */
@@ -370,7 +211,7 @@ a:hover:not(.logo) {
 
 @media (max-width: 992px) {
   .banner {
-    background-image: url("./img/home-header-sm.png");
+    background-image: url("../img/home-header-sm.png");
   }
 }
 
@@ -446,9 +287,9 @@ a:hover:not(.logo) {
     flex-wrap: wrap;
   }
 
-  /* .classic-list .card {
+  .classic-list .card {
     max-width: 336px;
-  } */
+  }
 }
 
 @media (max-width: 576px) {
@@ -458,7 +299,7 @@ a:hover:not(.logo) {
 }
 
 .cobrand {
-  background-image: url("./img/index-bg.png");
+  background-image: url("../img/index-bg.png");
   background-size: cover;
 }
 
@@ -472,12 +313,12 @@ a:hover:not(.logo) {
 }
 
 .cobrand-list .card-img-double {
-  background-image: url("./img/home-section4-1.png");
+  background-image: url("../img/home-section4-1.png");
   background-size: cover;
 }
 
 .cobrand-list .card-img-youth {
-  background-image: url("./img/home-section4-2.png");
+  background-image: url("../img/home-section4-2.png");
   background-size: cover;
 }
 
@@ -497,7 +338,7 @@ a:hover:not(.logo) {
 
   .cobrand-list .card {
     width: 100%;
-    /* max-width: 696px; */
+    max-width: 696px;
   }
 
   .cobrand-list .card:not(last-child) {
@@ -507,12 +348,12 @@ a:hover:not(.logo) {
 
 @media (max-width: 576px) {
   .cobrand-list .card-img-double {
-    background-image: url("./img/home-section4-1-sm.png");
+    background-image: url("../img/home-section4-1-sm.png");
     background-size: cover;
   }
 
   .cobrand-list .card-img-youth {
-    background-image: url("./img/home-section4-2-sm.png");
+    background-image: url("../img/home-section4-2-sm.png");
     background-size: cover;
   }
 }
@@ -713,6 +554,24 @@ a:hover:not(.logo) {
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    max-width: 372px;
+  }
+}
+
+.container-md-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .container-md-fluid {
+    max-width: 720px;
+  }
+}
+
 .container-sm-full {
   max-width: 1320px;
   margin: 0 auto;
@@ -723,12 +582,6 @@ a:hover:not(.logo) {
   .container-sm-full {
     padding: 0;
   }
-}
-
-.container-md-fluid {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
 }
 
 .d-flex {
